@@ -1,0 +1,128 @@
+*, html, body 
+{
+	margin:0;
+	padding:0;	
+	font-family: "Charter", serif;
+}
+h1, h2, h3, h4, h5, h6 
+{
+	font-family: "Helvetica", "Arial", sans-serif;
+}
+
+.hoofdstuk
+{
+	width: 100%;
+}
+
+/* 
+ * start scherm
+ */
+ 
+#start
+{
+	text-align: center;
+	height: 100vh;
+}
+#titel
+{
+	position: relative;
+	top: 40%;
+	transform: translateY(-40%);
+}
+#titel h1
+{
+	font: normal bold 5vw/0em "Helvetica", "Arial", sans-serif;
+	padding: 0;
+}
+#titel h3
+{
+	font: italic normal 3vw/4em "Charter", serif;
+	padding: 0;
+}
+
+/* 
+ * styling van de titelbalk elementen
+ */
+ 
+.titelbalk
+{
+	text-align: center;
+	line-height: 5vh;
+	/* de volgende 2 waardes moet bij elkaar 100 gedeeld door het aantal sections zijn */
+	height: 5vh;
+	padding: 2.5vh 0;
+	cursor: pointer;
+}
+.titelbalk h1 { font-size: 1.5vmax; }
+.titelbalk h3 { font: italic normal .8vmax/.4em "Charter", serif; }
+
+#inleiding
+{
+	background-color: Tomato;
+}
+#een 
+{
+	background-color: SpringGreen;
+}
+#twee 
+{
+	background-color: SteelBlue;
+}
+#tweetwee
+{
+	background-color: SkyBlue;
+}
+#drie
+{
+	background-color: Silver;
+}
+#vier
+{
+	background-color: PaleVioletRed;
+}
+#vijf
+{
+	background-color: Coral;
+}
+#reflectie
+{
+	background-color: Gold;
+}
+#conclusie
+{
+	background-color: SlateGray;
+}
+#appendix
+{
+	background-color: BurlyWood;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+ }
+
+/* 
+ * styling van de teksten en al het anderen binnen de hoofdstukken
+ */
+
+
+h1 { font-size: 2vmax; }
+h2 { font-size: 1vmax; }
+h3 { font-size: 1vmax; }
+
+.text
+{
+	width: 700px;
+	display: none;
+	margin: 0 auto;
+	padding: 2em 0;
+	display: block; /* set to none if all text needs to be hidden from the start */
+}
+
+p
+{
+	margin: 1em 0;
+	font-size: 14pt;
+	line-height: 1.4em;
+}
