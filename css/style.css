@@ -62,19 +62,19 @@ h1, h2, h3, h4, h5, h6
 }
 #een 
 {
-	background-color: SpringGreen;
+	background-color: MediumVioletRed;
 }
 #twee 
 {
-	background-color: SteelBlue;
+	background-color: DeepPink;
 }
 #tweetwee
 {
-	background-color: SkyBlue;
+	background-color: HotPink;
 }
 #drie
 {
-	background-color: Silver;
+	background-color: LightCoral;
 }
 #vier
 {
@@ -86,15 +86,15 @@ h1, h2, h3, h4, h5, h6
 }
 #reflectie
 {
-	background-color: Gold;
+	background-color: LightPink;
 }
 #conclusie
 {
-	background-color: SlateGray;
+	background-color: PaleVioletRed;
 }
 #appendix
 {
-	background-color: BurlyWood;
+	background-color: Thistle;
 }
 /* 
  * styling van de teksten en al het anderen binnen de hoofdstukken
