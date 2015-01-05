@@ -6,7 +6,8 @@
 }
 h1, h2, h3, h4, h5, h6 
 {
-	font-family: "Helvetica", "Arial", sans-serif;
+	font-family: "Charter", sans-serif;
+	font-family: 'Raleway', sans-serif;
 }
 
 .hoofdstuk
@@ -31,7 +32,7 @@ h1, h2, h3, h4, h5, h6
 }
 #titel h1
 {
-	font: normal bold 5vw/0em "Helvetica", "Arial", sans-serif;
+	font: normal bold 5vw/0em "Raleway", sans-serif;
 	padding: 0;
 }
 #titel h3
@@ -123,7 +124,16 @@ p
 
 blockquote
 {
-font-size: 18pt;
-line-height: 1.4em;
-margin: 1em 0;
-font-style: italic;
+	font-size: 14pt;
+	line-height: 1.4em;
+	margin: 1em 0;
+}
+.quotes
+{
+	font-style: italic;
+	font-size: 14pt;
+}
+.vragen
+{
+	font-weight: bold;
+}

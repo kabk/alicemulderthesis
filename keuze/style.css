@@ -1,0 +1,236 @@
+*, html, body 
+{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 12pt;
+}
+
+/*
+ * 	ALLE BASIS ELEMENTEN
+ */
+ 
+#wrapper
+{
+	margin: 20vh auto 0;
+	width: 44vw;
+	min-width: 550px;
+	padding: 0 50px;
+}
+section 
+{
+	margin-bottom: 4em;
+}
+.footnotes
+{
+	color: red;
+}
+
+
+/*
+ * 	HIER ONDER VIND JE ALLE STIJLEN VOOR DE KOPPEN 
+ */
+
+h1  /* title van de thesis */
+{
+	font-size: 2.4em;
+	margin-bottom: 1em;
+}
+h2  /* subtitle van de thesis */
+{
+	font-size: 2em;
+	margin-bottom: 1em;
+}
+h3 	/* title van een hoofdstuk */
+{
+	font-size: 1.8em;
+	margin-bottom: 1em;
+}
+h4  /* subtitle van een hoofdstuk */
+{
+	font-size: 1.4em;
+	margin-bottom: 1em;
+	font-weight: normal;
+	font-style: italic;
+	margin: 0 2em 1em;
+}
+h5
+{
+}
+h6 	/* ENKEL GEBRUIKEN VOOR HET STELEN VAN SCRIPTIE DELEN */
+{
+	color:red;
+	font-size:36pt;
+}
+
+/*
+ * 	HIER ONDER VIND JE ALLE STIJLEN VOOR DE DE PARAGRAFEN (EN ALLES WAT DAAR IN ZIT, bijv <blockquote></blockquote> 
+ */
+
+p
+{
+	font-family: 'Charter', serif;
+	margin: 1em 0;
+	line-height: 1.4em;
+}
+blockquote 
+{
+	font-style: italic;
+	margin: 2em 2em;
+}
+.footnote	/* footnoten in de tekst */
+{
+	color:red;
+	vertical-align: super;
+	font-size: 0.5em;
+}
+
+/* 
+ * NAVIGATIE
+ */
+
+nav
+{
+	position: fixed;
+	top: 25px; left: 25px;
+}
+nav ul li 
+{
+	float:left;
+	margin-right: 25px;
+}
+
+/*
+ *	LINK STIJLEN
+ */
+ 
+a 
+{
+	color: blue;
+	text-decoration: none;  /* kan ook underline, strike-through etc */
+}
+a:hover  /* als je met je muis ergens over heen beweegt */
+{
+	color: red;
+	text-decoration: none;
+} 
+a:visited
+{
+	color: blue;
+	text-decoration: none;
+}
+a:active
+{
+	color: blue;
+	text-decoration: none;
+}
+ 
+ 
+/*
+ * ANDERE STIJLEN
+ */
+ 
+  
+ul
+{
+	margin-bottom:  1em;
+}
+li
+{
+	list-style-type: none;
+}
+
+#indexvraag
+{
+	text-align: center;
+	font-size: 4vw;
+}
+.keuze 
+{
+	float:left;
+	height: 12vw; width: 12vw;
+	min-height: 150px; min-width: 150px;
+	margin-right: 50px;
+	border-radius: 2vw;
+}
+	
+#man 
+{
+	background: url(img/knoppen_uitgelijnd512-01-04.png) no-repeat;
+	background-size: 100% 100%;
+	box-shadow: rgba(0, 133, 255, 0.50) 4px 4px 10px;
+}
+#neutraal
+{
+	background: url(img/knoppen_uitgelijnd512-01-06.png) no-repeat;
+	background-size: 100% 100%;
+	box-shadow: rgba(128, 128, 128, 0.50) 4px 4px 10px;
+}
+#vrouw
+{
+	background: url(img/knoppen_uitgelijnd512-01-05.png) no-repeat;
+	background-size: 100% 100%;
+	box-shadow: rgba(255, 133, 128, 0.50) 4px 4px 10px;
+	margin:0;
+}
+
+@media screen and (max-width : 960px)
+{
+	#indexvraag
+	{
+		font-size: 28pt;
+	}
+	
+}
+
+
+/* iphone
+@media screen and (min-device-width : 480px) and (max-device-width: 1136px) and (orientation: landscape)
+{
+	#wrapper 
+	{
+		min-width: 700px; 
+		max-width: 100%;
+		margin: 0 auto;
+	}
+	#indexvraag
+	{
+		font-size: 28pt;
+	}
+	.keuze 
+	{
+		min-height: 200px; min-width: 200px;
+		margin-bottom: 50px;
+		border-radius: 5px;
+	}
+	#vrouw
+	{
+		margin:0;
+	}
+}
+
+@media screen and (min-device-width : 320px) and (max-device-width: 640px) and (orientation: portrait)
+{
+	#wrapper 
+	{
+		min-width: 640px;
+		width: 64vw;
+		margin: 20vh auto;
+	}
+	#indexvraag
+	{
+		font-size: 48pt;
+	}
+	.keuze 
+	{
+		min-height: 180px; min-width: 180px;
+		margin-bottom: 50px;
+		border-radius: 20px;
+	}
+	#vrouw
+	{
+		margin:0;
+	}
+}
+
+ */

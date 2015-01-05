@@ -1,0 +1,125 @@
+*, html, body 
+{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 12pt;
+}
+
+/*
+ * 	ALLE BASIS ELEMENTEN
+ */
+ 
+#wrapper
+{
+	margin: 5vw auto 0;
+	width: 600px;
+}
+section 
+{
+	margin-bottom: 4em;
+}
+.footnotes
+{
+	color: red;
+}
+
+
+/*
+ * 	HIER ONDER VIND JE ALLE STIJLEN VOOR DE KOPPEN 
+ */
+
+h1  /* title van de thesis */
+{
+	font-size: 2.4em;
+	margin-bottom: 1em;
+}
+h2  /* subtitle van de thesis */
+{
+	font-size: 2em;
+	margin-bottom: 1em;
+}
+h3 	/* title van een hoofdstuk */
+{
+	font-size: 1.8em;
+	margin-bottom: 1em;
+}
+h4  /* subtitle van een hoofdstuk */
+{
+	font-size: 1.4em;
+	margin-bottom: 1em;
+	font-weight: normal;
+	font-style: italic;
+	margin: 0 2em 1em;
+}
+h5
+{
+}
+h6 	/* ENKEL GEBRUIKEN VOOR HET STELEN VAN SCRIPTIE DELEN */
+{
+	color:red;
+	font-size:36pt;
+}
+
+/*
+ * 	HIER ONDER VIND JE ALLE STIJLEN VOOR DE DE PARAGRAFEN (EN ALLES WAT DAAR IN ZIT, bijv <blockquote></blockquote> 
+ */
+
+p
+{
+	font-family: 'Charter', serif;
+	margin: 1em 0;
+	line-height: 1.4em;
+}
+blockquote 
+{
+	font-style: italic;
+	margin: 2em 2em;
+}
+.footnote	/* footnoten in de tekst */
+{
+	color:red;
+	vertical-align: super;
+	font-size: 0.5em;
+}
+
+
+/*
+ *	LINK STIJLEN
+ */
+ 
+a 
+{
+	color: blue;
+	text-decoration: none;  /* kan ook underline, strike-through etc */
+}
+a:hover  /* als je met je muis ergens over heen beweegt */
+{
+	color: red;
+	text-decoration: none;
+} 
+a:visited
+{
+	color: blue;
+	text-decoration: none;
+}
+a:active
+{
+	color: blue;
+	text-decoration: none;
+}
+ 
+ 
+/*
+ * ANDERE STIJLEN
+ */
+ 
+  
+ul
+{
+	margin-bottom:  1em;
+}
+li
+{
+	list-style-type: none;
+}
