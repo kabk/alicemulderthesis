@@ -1,25 +1,73 @@
-*, html, body 
+*, html, body
 {
 	margin:0;
-	padding:0;	
-	font-family: "Charter", serif;
+	padding:0;
+	font-family: "Titillium Web", sans-serif;
 }
-h1, h2, h3, h4, h5, h6 
+html, body
 {
-	font-family: "Charter", sans-serif;
-	font-family: 'Raleway', sans-serif;
+	/*overflow: hidden;*/
 }
-
-.hoofdstuk
+h1, h2, h3, h4, h5, h6
+{
+	font-family: 'Ubuntu', sans-serif;
+}
+section
 {
 	width: 100%;
 }
-
-/* 
- * start scherm
+/*
+ * navigatie stijlen
  */
- 
-#start
+
+.nav-wrapper
+{
+	width:30vw;
+}
+.nav-wrapper-inner
+{
+	float:left;
+}
+.nav-button
+{
+	margin: 10px 0 0 10px;
+	cursor:pointer;
+	z-index:1001;
+}
+nav ul /* #inhoudsopgave */
+{
+	position:fixed;
+	top:0px;
+	left:70px;
+	display:none;
+	background-color: #fff;
+	z-index: 1000;
+	padding-top: 10px;
+}
+nav ul li
+{
+	list-style-type: none;
+	padding: 1vh 1em 1vh 0;
+}
+.sub-text
+{
+	font: normal bold .8em/1em "Ubuntu", sans-serif;
+}
+.boekdeel
+{
+	font-weight:bold;
+	color: red;
+}
+.scrolling { /* keep the navigatation at the top */
+    position: fixed;
+    top: 0;
+}
+
+/*
+ * cover schermen
+ */
+
+.cover
 {
 	text-align: center;
 	height: 100vh;
@@ -29,111 +77,129 @@ h1, h2, h3, h4, h5, h6
 	position: relative;
 	top: 40%;
 	transform: translateY(-40%);
+	-moz-transform: translateY(-40%);
+	-webkit-transform: translateY(-40%);
 }
 #titel h1
 {
-	font: normal bold 5vw/0em "Raleway", sans-serif;
+	font: normal bold 5vw/0em "Ubuntu", sans-serif;
 	padding: 0;
 }
 #titel h3
 {
-	font: italic normal 3vw/4em "Charter", serif;
+	font: italic normal 3vw/4em "Titillium Web", sans-serif;
 	padding: 0;
 }
 
-/* 
+/*
  * styling van de titelbalk elementen
  */
- 
+
 .titelbalk
 {
 	text-align: center;
 	line-height: 5vh;
+	padding: 2.5vh 0;
 	/* de volgende 2 waardes moet bij elkaar 100 gedeeld door het aantal sections zijn */
 	height: 5vh;
-	padding: 2.5vh 0;
-	cursor: pointer;
+	width: 550px;
+	margin: 0 auto;
 }
 .titelbalk h1 { font-size: 1.5vmax; }
-.titelbalk h3 { font: italic normal .8vmax/.4em "Charter", serif; }
+.titelbalk h3 { font: italic normal .8vmax/.4em "Titillium Web", sans-serif; }
 
-#inleiding
-{
-	background-color: LavenderBlush;
-}
-#een 
-{
-	background-color: MediumVioletRed;
-}
-#twee 
-{
-	background-color: DeepPink;
-}
-#tweetwee
-{
-	background-color: HotPink;
-}
-#drie
-{
-	background-color: LightCoral;
-}
-#vier
-{
-	background-color: PaleVioletRed;
-}
-#vijf
-{
-	background-color: Coral;
-}
-#reflectie
-{
-	background-color: LightPink;
-}
-#conclusie
-{
-	background-color: PaleVioletRed;
-}
-#appendix
-{
-	background-color: Thistle;
-}
-/* 
- * styling van de teksten en al het anderen binnen de hoofdstukken
+#inleiding 	{ background-color:  	#F8F8F8; }
+#een			{ background-color: #E8E8E8; }
+#twee 		{ background-color:  	#D8D8D8; }
+#tweetwee 	{ background-color: #C8C8C8; }
+#drie 		{ background-color: #B8B8B8; }
+#vier 		{ background-color:  #A8A8A8; }
+#vijf 		{ background-color:  	#989898; }
+#reflectie 	{ background-color: #888888; }
+#conclusie 	{ background-color: #787878; }
+#appendix 	{ background-color: #686868; }
+#eind 		{ background-color: #585858; }
+
+/*
+ * styling van de teksten
  */
-
 
 h1 { font-size: 2vmax; }
 h2 { font-size: 1vmax; }
 h3 { font-size: 1vmax; }
 
-.text
+.text /* de wrapper voor textblokken */
 {
-	width: 700px;
+	width: 550px;
 	display: none;
 	margin: 0 auto;
 	padding: 2em 0;
+}
+.collapsed
+{
 	display: block; /* set to none if all text needs to be hidden from the start */
 }
 
 p
 {
 	margin: 1em 0;
-	font-size: 14pt;
+	font-size: 13pt;
 	line-height: 1.4em;
 }
 
 blockquote
 {
-	font-size: 14pt;
+	font-size: 16pt;
 	line-height: 1.4em;
 	margin: 1em 0;
 }
-.quotes
+	.quotes
+	{
+		font-style: italic;
+		font-size: 16pt;
+	}
+
+	.vragen
+	{
+		font-weight: bold;
+	}
+
+ul
 {
-	font-style: italic;
-	font-size: 14pt;
+	list-style-type:circle;
+	margin-left:1.2em;
 }
-.vragen
+/*
+ * styling afbeeldingen
+ */
+
+figure
 {
-	font-weight: bold;
+	display:table;
+	height: 100%;
+}
+figure img
+{
+}
+figcaption
+{
+	background-color: rgba(255,255,255,0.5);
+	position: relative;
+	padding: 12px 12px;
+}
+
+/*
+ * link styles
+ */
+a
+{
+	color: black;
+}
+a:hover
+{
+	color: blue;
+}
+a:visited
+{
+	color: black;
 }
