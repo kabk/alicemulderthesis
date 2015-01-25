@@ -203,3 +203,13 @@ a:visited
 {
 	color: black;
 }
+
+/*
+ * bigfoot custom
+ */
+
+.bigfoot-footnote__content p {
+  margin: 0;
+  color: SteelBlue;
+}
+
