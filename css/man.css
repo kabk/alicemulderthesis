@@ -89,3 +89,9 @@ a:visited
 {
 	color: black;
 }
+
+.bigfoot-footnote__content p {
+  margin: 0;
+  color: SteelBlue;
+}
+
