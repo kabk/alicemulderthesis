@@ -204,6 +204,34 @@ a:visited
 	color: black;
 }
 
+
+/*
+ * reclame
+ */
+
+#reclame-wrapper {
+	position:absolute;
+	top:100vh;
+	right:25px;
+	width: 300px;
+	height: 100%;
+}
+.reclame {
+	position:relative;
+	width: 300px;
+	top:0;
+	left:0;
+}
+.reclame img {
+	width:300px;
+}
+.ad {
+	display:block;
+	text-align: center;
+	font-size: 8px;
+	width:300px;
+	margin-bottom:5px;
+}
 /*
  * bigfoot custom
  */

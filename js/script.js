@@ -20,6 +20,11 @@ $(function ()
 
 });
 
+function getRandomRange(min, max)
+{
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
 $(function()
 {
 	$("a[href*=#]:not([href=#])").click(function()
@@ -49,4 +54,26 @@ $(function()
 			}
    	}
 	});
+});
+
+$(function(){
+		var hoogte = 28000;
+    var afb = [];
+    var nummer = 0;
+
+    $(".reclame").each(function ()
+    {
+        afb.push( $(this).offset() );
+    });
+
+
+    for (var i = 0; i < afb.length; i++)
+    {
+      nummer = i + 1;
+
+    	$("#afb" + nummer).css(
+    	{
+        	"top": getRandomRange(0, hoogte) + "px",
+			});
+		}
 });
