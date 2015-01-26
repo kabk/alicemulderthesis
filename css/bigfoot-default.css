@@ -161,9 +161,6 @@
   border-radius: 0;
 }
 
-.bigfoot-footnote__content p {
-  margin: 0;
-}
 
 .bigfoot-footnote.is-bottom-fixed .bigfoot-footnote__tooltip {
   display: none;

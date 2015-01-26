@@ -213,3 +213,5 @@ a:visited
   color: SteelBlue;
 }
 
+{
+.clear { clear:both; }
