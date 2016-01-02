@@ -1,5 +1,4 @@
-$(function ()
-{
+$(function() {
 	/* show the navigation */
 	$( "#nav-button" ).click(function()
 	{
@@ -7,8 +6,7 @@ $(function ()
 	});
 
 	/* toggle overflow */
-	$('#begin').click( function()
-	{
+	$('#begin').click(function() {
 		$('html, body').css('overflow', 'auto');
 	});
 
@@ -17,16 +15,16 @@ $(function ()
 	// {
 	// 		$('html, body').css('overflow', 'auto');
 	// }
-
+	$('.titelbalk').click(function() { 
+		$(this).siblings('.text').slideToggle(500);
+	});
 });
 
-function getRandomRange(min, max)
-{
+function getRandomRange(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-$(function()
-{
+$(function() {
 	$("a[href*=#]:not([href=#])").click(function()
 	{
    	if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname)
