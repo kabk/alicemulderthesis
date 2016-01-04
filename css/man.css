@@ -33,7 +33,7 @@ h1, h2, h3, h4, h5, h6
  * styling van de titelbalk elementen
  */
 
-.titelbalk h3 { font: italic normal .8vmax/.4em "Fira Sans", sans-serif; }
+.titelbalk h3 { font: italic normal .9vmax/.4em "Fira Sans", sans-serif; }
 
 #inleiding 		{	background-color: Azure; }
 #een  				{	background-color: AliceBlue; }
