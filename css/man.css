@@ -26,26 +26,26 @@ h1, h2, h3, h4, h5, h6
 }
 #titel h3
 {
-	font: italic normal 3vw/3em "Fira Sans", sans-serif;
+	font: italic normal 3vw/4em "Fira Sans", sans-serif;
 }
 
 /*
  * styling van de titelbalk elementen
  */
 
-.titelbalk h3 { font: italic normal .9vmax/.3em "Fira Sans", sans-serif; }
+.titelbalk h3 { font: italic normal .8vmax/.4em "Fira Sans", sans-serif; }
 
 #inleiding 		{	background-color: Azure; }
 #een  				{	background-color: AliceBlue; }
-#twee  				{	background-color: CornflowerBlue; }
-#tweetwee 		{	background-color: DarkSkyBlue; }
-#drie 				{	background-color: DarkCyan; }
+#twee  				{	background-color: LightSkyBlue; }
+#tweetwee 		{	background-color: LightCyan; }
+#drie 				{	background-color: DeepSkyBlue; }
 #vier 				{	background-color: DodgerBlue; }
-#vijf 				{	background-color: LightBlue; }
-#reflectie 		{	background-color: LightSkyBlue; }
+#vijf 				{	background-color: 	SkyBlue; }
+#reflectie 		{	background-color: CornflowerBlue; }
 #conclusie 		{	background-color: PowderBlue; }
 #appendix 		{ background-color: SteelBlue; }
-#eind 				{ background-color: DarkBlue; }
+#eind 				{ background-color: LightSteelBlue; }
 
 /*
  * styling van de teksten
