@@ -35,15 +35,15 @@ h1, h2, h3, h4, h5, h6
 
 .titelbalk h3 { font: italic normal .8vmax/.4em "Fira Sans", sans-serif; }
 
-#inleiding 		{	background-color: Azure; }
-#een  				{	background-color: AliceBlue; }
+#inleiding 		{	background-color: AliceBlue; }
+#een  				{	background-color: Gainsboro; }
 #twee  				{	background-color: LightSkyBlue; }
-#tweetwee 		{	background-color: LightCyan; }
+#tweetwee 		{	background-color: 	LightBlue; }
 #drie 				{	background-color: DeepSkyBlue; }
 #vier 				{	background-color: DodgerBlue; }
 #vijf 				{	background-color: 	SkyBlue; }
-#reflectie 		{	background-color: CornflowerBlue; }
-#conclusie 		{	background-color: PowderBlue; }
+#reflectie 		{	background-color: LightGrey; }
+#conclusie 		{	background-color: LightSlateGray; }
 #appendix 		{ background-color: SteelBlue; }
 #eind 				{ background-color: LightSteelBlue; }
 
