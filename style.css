@@ -1,0 +1,172 @@
+/* z-index
+
+    cover: 10
+*/
+
+html, body
+{
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+*, *:before, *:after
+{
+    box-sizing: inherit;
+}
+
+#container
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 233vw;
+    height: 100vh;
+}
+
+/*****
+
+    COVER
+
+*****/
+
+#cover
+{
+    float: left;
+    width: 100vw;
+    height: 100vh;
+}
+.cover_inner
+{
+    margin: 50px auto;
+    width: 70vh;
+    height: 70vh;
+    background: url('img/Cover title image_vrouw.png') center no-repeat;
+    background-size: cover;
+}
+#cover_caption
+{
+    position: absolute;
+    bottom: 60px;
+    width: 100vw;
+    text-align: center;
+    line-height: 2em;
+}
+#start_reading
+{
+    text-decoration: underline;
+    cursor: pointer;
+}
+#start_reading:hover
+{
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 0 0 10px #000;
+}
+/*****
+
+    NAVIGATION
+
+*****/
+
+nav
+{
+    float:left;
+    width: 33vw;
+    height: 100vh;
+    background-color: black;
+    color: #fff;
+}
+.menu_toggle
+{
+    position: relative;
+    top: 25px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background: url('img/menu_icon_alice.svg') center no-repeat;
+    background-size: cover;
+    z-index: 15;
+}
+.content_side
+{
+    left: 50px;
+}
+
+
+/*****
+
+    MAIN
+
+*****/
+
+main
+{
+    float:left;
+    height: 100vh;
+    width: 100vw;
+    background-color: WhiteSmoke;
+    overflow-x: auto;
+
+}
+.scrollbox
+{
+    margin-top: -25px;
+    width: 10000px;
+    height: 100vh;
+}
+.chapter
+{
+    position: relative;
+    float: left;
+    height: 100vh;
+    padding: 10vh 0;
+}
+.chapter > *
+{
+    float:left;
+    height: 80vh;
+    margin-left: 50px;
+}
+.content
+{
+    display: none;
+    width: 1000px;
+    -webkit-column-width: 250px;
+    -webkit-column-gap: 50px;
+}
+.teaser
+{
+    position: relative;
+    width: 200px;
+}
+
+.teaser img
+{
+    position: absolute;
+    bottom: 0;
+}
+.spine
+{
+    position: relative;
+    height: 100%;
+    width: 8vh;
+    background-color: black;
+}
+
+
+/* HOOFDSTUKKKEN */
+
+#inleiding .spine
+{
+    background: url('');
+    background-size: contain;
+}
+#een .spine
+{
+    background: url('img/vr balken-hoofdstuk 1.svg') no-repeat;
+    background-size: contain;
+}
+#twee .spine
+{
+    background: url('');
+    background-size: contain;
+}
