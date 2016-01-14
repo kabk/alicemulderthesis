@@ -167,12 +167,14 @@ main
     background: url('img/vr balken-hoofdstuk 1.svg') no-repeat;
     background-size: contain;
 }
+#twee_twee .content {
+    width:3000px;
+}
 #twee_een .spine
 {
     background: url('img/vr balken-hoofdstuk 2.1.svg');
     background-size: contain;
 }
-
 #twee_twee .spine
 {
     background: url('img/vr balken-hoofdstuk 2.2.svg');
