@@ -193,6 +193,11 @@ main
     background: url('img/vr balken-hoofdstuk 4.svg');
     background-size: contain;
 }
+#vijf .spine
+{
+    background: url('img/vr balken-hoofdstuk 5.svg');
+    background-size: contain;
+}
 
 /* STYLING TEKSTEN */
 
