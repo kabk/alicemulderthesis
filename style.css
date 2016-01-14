@@ -208,6 +208,12 @@ main
     background: url('img/vr balken-conclusie.svg');
     background-size: contain;
 }
+#bronnen .spine
+{
+    background: url('img/vr balken-bronnen.svg');
+    background-size: contain;
+}
+
 
 /* STYLING TEKSTEN */
 
