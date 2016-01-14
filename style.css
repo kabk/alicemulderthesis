@@ -198,6 +198,16 @@ main
     background: url('img/vr balken-hoofdstuk 5.svg');
     background-size: contain;
 }
+#reflectie .spine
+{
+    background: url('img/vr balken-reflectie.svg.svg');
+    background-size: contain;
+}
+#conclusie .spine
+{
+    background: url('img/vr balken-conclusie.svg');
+    background-size: contain;
+}
 
 /* STYLING TEKSTEN */
 
