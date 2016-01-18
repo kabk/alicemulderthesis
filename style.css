@@ -55,11 +55,22 @@ h1, h2, h3, h4, h5, h6
 .cover_inner
 {
     margin: 50px auto;
-    width: 70vh;
-    height: 70vh;
+    width: 65vh;
+    height: 65vh;
     background: url('img/cover–robin-thicke.png') center no-repeat;
     background-size: cover;
+    position:relative;
+    z-index:1;
 }
+.cover_title
+{
+    position:absolute;
+    z-index:2;
+    top: 1px ;
+    right: ;
+    background: transparent url('img/Titel.png') center;
+}
+
 #cover_caption
 {
     position: absolute;
