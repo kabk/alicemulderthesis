@@ -2,7 +2,7 @@ $(function() {
     $('.cover_side').css({'left':  $('#cover').outerWidth() - (25 + 40) + 'px'});
 
     $('#start_reading').on('click', function() {
-        $('#container').animate({'left': '-133vw'});
+        $('#container').animate({'left': '-123vw'});
 
         if ($('nav').hasClass('open')) {
             $('nav').removeClass('open');
@@ -12,7 +12,7 @@ $(function() {
 
     $('.content_side').on('click', function() {
         if ($('nav').hasClass('open')) {
-            $('#container').animate({'left': '-133vw'});
+            $('#container').animate({'left': '-123vw'});
             $('nav').removeClass('open');
 
         }
@@ -32,7 +32,7 @@ $(function() {
 
         }
         else {
-            $('#container').animate({'left': '-33vw'});
+            $('#container').animate({'left': '-23vw'});
             $('nav').addClass('open');
         }
 

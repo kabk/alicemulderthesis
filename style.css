@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5, h6
     position: absolute;
     top: 0;
     left: 0;
-    width: 233vw;
+    width: 223vw;
     height: 100vh;
 }
 
@@ -54,21 +54,22 @@ h1, h2, h3, h4, h5, h6
 }
 .cover_inner
 {
-    margin: 50px auto;
-    width: 65vh;
-    height: 65vh;
+    margin: 90px auto;
+    width: 60vh;
+    height: 60vh;
     background: url('img/cover–robin-thicke.png') center no-repeat;
     background-size: cover;
-    position:relative;
+    position: relative;
     z-index:1;
 }
 .cover_title
 {
-    position:absolute;
+ 
+    position: absolute;
     z-index:2;
-    top: 1px ;
-    right: ;
-    background: transparent url('img/Titel.png') center;
+    width: 100vw;
+    font: normal normal 48pt/1em 'Times', serif;
+    text-align: center;
 }
 
 #cover_caption
@@ -110,7 +111,7 @@ nav
     width: 40px;
     height: 40px;
     cursor: pointer;
-    background: url('img/menu_icon_alice.svg') center no-repeat;
+    background: transparent url('img/menu_icon_alice.svg') center no-repeat;
     background-size: cover;
     z-index: 15;
 }
