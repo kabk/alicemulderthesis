@@ -226,6 +226,10 @@ main
     background: url('img/vr balken-hoofdstuk 5.svg');
     background-size: contain;
 }
+#vijf .content 
+{
+    width:1500px;
+}
 #reflectie .spine
 {
     background: url('img/vr balken-reflectie.svg');
