@@ -216,10 +216,18 @@ main
     background: url('img/vr balken-hoofdstuk 3.svg');
     background-size: contain;
 }
+#drie .content 
+{
+    width:5000px;
+}
 #vier .spine
 {
     background: url('img/vr balken-hoofdstuk 4.svg');
     background-size: contain;
+}
+#vier .content 
+{
+    width:4000px;
 }
 #vijf .spine
 {
@@ -234,6 +242,10 @@ main
 {
     background: url('img/vr balken-reflectie.svg');
     background-size: contain;
+}
+#reflectie .content 
+{
+    width:3000px;
 }
 #conclusie .spine
 {
