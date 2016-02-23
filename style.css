@@ -10,19 +10,29 @@ html, body
     font-family: 'Yantramanav', sans-serif;
 
 }
-h1, h2, h3, h4, h5, h6
+h1, h2, h3, h5
 {
     font-family: 'Playfair Display', serif;
 }
 
 #titel h1
 {
-    font: normal bold 5vw/0em "Playfair Display", sans-serif;
+    font: normal bold 5vw/0em "Playfair Display", serif;
     padding: 0;
 }
 #titel h2
 {
     font: italic 3vw/4em "Playfair Display", serif;
+    padding: 0;
+}
+#titel h6  
+{
+    font: normal 1vw/0.575em "Yantramanav", sans-serif;
+    padding: 0;
+}
+#titel h4
+{
+    font: normal 3vw/1em "Yantramanav", sans-serif;
     padding: 0;
 }
 
