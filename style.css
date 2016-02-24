@@ -292,3 +292,25 @@ ul
     list-style-type:circle;
     margin-left:1.2em;
 }
+
+/* STYLING AFBEELDINGEN */
+
+}
+
+#thumbnail {
+    display: block;
+    width: 250px;
+    height: 100px;
+}
+
+#thumbnail:hover + #title {
+    display: block;
+    position: absolute;
+}
+
+#title {
+    display: none;
+    text-align: center;
+    width: 250px;
+    padding: 10px;
+}
