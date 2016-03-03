@@ -84,7 +84,7 @@ h6
 }
 #titel h2
 {
-    font: italic 4vw/6em "Playfair Display", serif;
+    font: italic 5vw/6em "Playfair Display", serif;
     padding: 0;
 }
 #titel h6  
@@ -230,6 +230,7 @@ nav li:hover {
   margin: 1.2em 0;
   margin-right: -16vw;
   word-break: break-all;
+  color: #78E8C5;
 }
 .hoofdstuk .broodtekst .footnote p, .hoofdstuk .broodtekst .footnote a {
   font-size: 9pt;
@@ -264,13 +265,42 @@ ul
     margin-left:1.2em;
 }
 
-nav a, 
-nav a:link, 
-nav a:visited, 
-nav a:active  
-{
+a:link {
+    background-color: transparent;
     color: #78E8C5;
-    background-color: transparent; 
-    text-decoration: none;
 }
 
+a:visited {
+    background-color: transparent;
+    color: #78E8C5;
+}
+
+a:hover {
+    background-color: transparent;
+    color: #78E8C5;
+}
+
+a:active {
+    background-color: #78E8C5;
+    color: #78E8C5;
+}  
+
+#thumbnail {
+    display: block;
+    width: 300px;
+    height: 100px;
+}
+
+#thumbnail:hover + #title {
+    display: block;
+    position: absolute;
+    background-color: black;
+    color: #78E8C5;
+}
+
+#title {
+    display: none;
+    text-align: center;
+    width: 250px;
+    padding: 10px;
+}
