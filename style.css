@@ -1,18 +1,79 @@
-/* z-index
-
-    cover: 10
-*/
-
-html, body
-{
-    box-sizing: border-box;
-    overflow: hidden;
-    font-family: 'Yantramanav', sans-serif;
-
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
 }
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+html, body {
+  box-sizing: border-box;
+  font-family: "Yantramanav", sans-serif;
+  overflow: hidden;
+}
+
+*, *::before, *:after {
+  box-sizing: inherit;
+}
+
 h1, h2, h3, h5
 {
     font-family: 'Playfair Display', serif;
+    margin-bottom: 1em;
+}
+
+h6 
+{
+    margin: 0;
+    padding: 0;
 }
 
 #titel h1
@@ -36,281 +97,148 @@ h1, h2, h3, h5
     padding: 0;
 }
 
-*, *:before, *:after
-{
-    box-sizing: inherit;
+
+sup {
+  vertical-align: super;
+  font-size: .6em;
 }
 
-#container
-{
+ul {
+  margin: 1em 0;
+}
+
+main {
+  width: 100vw;
+}
+
+#wrapper {
+  overflow: hidden;
+}
+
+#cover {
+  width: 100vw;
+  height: 100vh;
+}
+#cover #cover_inner {
+  margin: 50px auto;
+  width: 70vh;
+  height: 70vh;
+  background: url("img/cover–robin-thicke.png") center no-repeat;
+  background-size: cover;
+}
+#cover_title {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 223vw;
-    height: 100vh;
-}
-
-/*****
-
-    COVER
-
-*****/
-
-#cover
-{
-    float: left;
-    width: 100vw;
-    height: 100vh;
-}
-.cover_inner
-{
-    margin: 90px auto;
-    width: 60vh;
-    height: 60vh;
-    background: url('img/cover–robin-thicke.png') center no-repeat;
-    background-size: cover;
-    position: relative;
-    z-index:1;
-}
-.cover_title
-{
- 
-    position: absolute;
-    z-index:2;
+    z-index: 2;
     width: 100vw;
     font: normal normal 48pt/1em 'Times', serif;
     text-align: center;
 }
 
-#cover_caption
-{
-    position: absolute;
-    bottom: 60px;
-    width: 100vw;
-    text-align: center;
-    line-height: 2em;
+#cover #cover_caption {
+  position: absolute;
+  bottom: 60px;
+  width: 100vw;
+  text-align: center;
+  line-height: 2em;
 }
-#start_reading
-{
-    text-decoration: underline;
-    cursor: pointer;
-}
-#start_reading:hover
-{
-    color: rgba(0, 0, 0, 0);
-    text-shadow: 0 0 10px #000;
-}
-/*****
-
-    NAVIGATION
-
-*****/
-
-nav
-{
-    float:left;
-    width: 23vw;
-    height: 100vh;
-    background-color: black;
-    color: #fff;
-}
-.menu_toggle
-{
-    position: relative;
-    top: 25px;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    background: transparent url('img/menu_icon_alice.svg') center no-repeat;
-    background-size: cover;
-    z-index: 15;
-}
-.content_side
-{
-    left: 50px;
+#cover #start_reading {
+  cursor: pointer;
 }
 
-
-/*****
-
-    MAIN
-
-*****/
-
-main
-{
-    float:left;
-    height: 100vh;
-    width: 100vw;
-    background-color: WhiteSmoke;
-    overflow-x: auto;
-
-}
-.scrollbox
-{
-    margin-top: -25px;
-    width: 30000px;
-    height: 100vh;
-}
-.chapter
-{
-    position: relative;
-    float: left;
-    height: 100vh;
-    padding: 10vh 0;
-}
-.chapter > *
-{
-    float:left;
-    height: 80vh;
-    margin-left: 50px;
-}
-.content
-{
-    display: none;
-    width: 1000px;
-    -webkit-column-width: 250px;
-    -webkit-column-gap: 50px;
-    -moz-column-width: 250px;
-}
-.teaser
-{
-    position: relative;
-    width: 200px;
+.button {
+  position: fixed;
+  top: 25px;
+  width: 50px;
+  height: 50px;
+  background-color: #000;
+  border-radius: 25px;
+  color: #fff;
+  line-height: 50px;
+  font-size: 0.7em;
+  text-align: center;
+  cursor: pointer;
 }
 
-.teaser img
-{
-    position: absolute;
-    bottom: 0;
-}
-.spine
-{
-    position: relative;
-    height: 100%;
-    width: 8vh;
-    background-color: black;
+.menu_toggle {
+  left: 25px;
 }
 
-
-/* HOOFDSTUKKKEN */
-
-#inleiding .spine
-{
-    background: url('img/vr balken-inleiding.svg');
-    background-size: contain;
-}
-#een .spine
-{
-    background: url('img/vr balken-hoofdstuk 1.svg') no-repeat;
-    background-size: contain;
-}
-#een .content {
-    width:1500px;
-}
-#twee_een .spine
-{
-    background: url('img/vr balken-hoofdstuk 2.1.svg');
-    background-size: contain;
-}
-#twee_twee .spine
-{
-    background: url('img/vr balken-hoofdstuk 2.2.svg');
-    background-size: contain;
-}
-#twee_twee .content {
-    width:5000px;
-}
-#drie .spine
-{
-    background: url('img/vr balken-hoofdstuk 3.svg');
-    background-size: contain;
-}
-#drie .content 
-{
-    width:5000px;
-}
-#vier .spine
-{
-    background: url('img/vr balken-hoofdstuk 4.svg');
-    background-size: contain;
-}
-#vier .content 
-{
-    width:4000px;
-}
-#vijf .spine
-{
-    background: url('img/vr balken-hoofdstuk 5.svg');
-    background-size: contain;
-}
-#vijf .content 
-{
-    width:1500px;
-}
-#reflectie .spine
-{
-    background: url('img/vr balken-reflectie.svg');
-    background-size: contain;
-}
-#reflectie .content 
-{
-    width:3000px;
-}
-#conclusie .spine
-{
-    background: url('img/vr balken-conclusie.svg');
-    background-size: contain;
-}
-#conclusie .content 
-{
-    width:500px;
-}
-#bronnen .spine
-{
-    background: url('img/vr balken-bronnen.svg');
-    background-size: contain;
+.print_toggle {
+  right: 25px;
 }
 
-
-/* STYLING TEKSTEN */
-
-blockquote
-{
-    font-size: 16pt;
-    line-height: 1.4em;
-    margin: 1em 0;
+nav {
+  position: fixed;
+  left: -300px;
+  top: 0px;
+  width: 300px;
+  height: 100vh;
+  padding: 5vh 1em;
+  background-color: black;
+  color: #fff;
 }
-    .quotes
-    {
-        font-style: italic;
-        font-size: 12pt;
-    }
-
-ul
-{
-    list-style-type:circle;
-    margin-left:1.2em;
+nav li {
+  width: 100%;
+  font-size: 1.5em;
+  padding: 5px 0;
+  cursor: pointer;
 }
-
-/* STYLING AFBEELDINGEN */
-
+nav li:hover {
+  text-decoration: underline;
+  color: #78E8C5;
 }
 
-#thumbnail {
-    display: block;
-    width: 250px;
-    height: 100px;
+.hoofdstuk {
+  width: inherit;
+  clear: both;
+  height: 100%;
+}
+.hoofdstuk > div {
+  float: left;
+  min-height: 100vh;
+}
+.hoofdstuk .rug {
+  width: 24vw;
+  padding: 5vh 1em;
+}
+.hoofdstuk .rug .rug_afb {
+  width: 60px;
+  float: right;
+}
+.hoofdstuk .teaser {
+  left: 24vw;
+  width: 21vw;
+  padding: 5vh 2em 5vh 1em;
+}
+.hoofdstuk .teaser p {
+  font-size: 1.2em;
+}
+.hoofdstuk .broodtekst {
+  left: 45vw;
+  width: 55vw;
+}
+.hoofdstuk .broodtekst .content {
+  float: left;
+  width: 50vw;
+  padding: 5vh 16vw 5vh 0;
+}
+.hoofdstuk .broodtekst .footnote {
+  float: right;
+  position: relative;
+  width: 16vw;
+  padding: 1em 1em 0 2em;
+  margin: 1.2em 0;
+  margin-right: -16vw;
+  word-break: break-all;
+}
+.hoofdstuk .broodtekst .footnote p, .hoofdstuk .broodtekst .footnote a {
+  font-size: 9pt;
 }
 
-#thumbnail:hover + #title {
-    display: block;
-    position: absolute;
-}
-
-#title {
-    display: none;
-    text-align: center;
-    width: 250px;
-    padding: 10px;
+.reclameblok img {
+  width: 50vw;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
