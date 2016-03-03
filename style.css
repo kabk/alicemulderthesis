@@ -57,16 +57,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 html, body {
   box-sizing: border-box;
   font-family: "Yantramanav", sans-serif;
-  overflow: hidden;
 }
 
 *, *::before, *:after {
   box-sizing: inherit;
 }
 
-h1, h2, h3, h5
+h1, h2, h3, h4, h5, h6
 {
-    font-family: 'Playfair Display', serif;
+    font: normal normal 1em/1em "Playfair Display", serif;
     margin-bottom: 1em;
 }
 
@@ -127,9 +126,10 @@ main {
   margin: 50px auto;
   width: 70vh;
   height: 70vh;
-  padding top: 50;
-  background: url("img/cover–robin-thicke.png") center no-repeat;
-  background-size: cover;
+}
+#cover #cover_inner img {
+  margin-top: 70px;
+  height: 100%;
 }
 .cover_title {
     position: absolute;
@@ -138,10 +138,9 @@ main {
     font: normal normal 48pt/1em 'Times', serif;
     text-align: center;
 }
-
 #cover #cover_caption {
   position: absolute;
-  bottom: 60px;
+  bottom: 30px;
   width: 100vw;
   text-align: center;
   line-height: 2em;
@@ -293,7 +292,6 @@ a:active {
 #thumbnail {
     display: block;
     width: 300px;
-    height: 100px;
 }
 
 #thumbnail:hover + #title {
@@ -308,4 +306,5 @@ a:active {
     text-align: center;
     width: 250px;
     padding: 10px;
+     margin-top: -75px;
 }

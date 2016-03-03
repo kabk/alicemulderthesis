@@ -1,0 +1,150 @@
+@media print {
+
+	
+	body, html {
+	margin-top: 15mm;
+	margin-bottom: 10px;
+	padding-right: 5px;
+	padding-left: 16px;
+	
+	}
+	
+
+  
+	.titel{
+	width: 100%;
+	background-repeat: no-repeat;
+	margin-top: 0px;
+	margin-right:auto;
+    margin-left: auto;	
+	font-family: 'Work Sans', sans-serif;	
+	letter-spacing:0px;
+	clear: both;
+	z-index:800;
+}
+
+	.subtitel{
+	width: 80%;
+	background-repeat: no-repeat;
+	margin-right:auto;
+	margin-top: 0px;
+    margin-left: auto;	
+    margin-bottom: 50px;
+	font-family: 'Playfair Display', serif;	
+	clear: both;
+	z-index:801;
+
+}
+
+	 	 
+	#menu{
+	display: none;
+	}
+
+	.footer{
+	display: none;
+	}
+	
+	h1 {
+	font-size: 80px;
+	line-height: 68px;
+	font-weight: normal;
+	margin-left: auto;	
+	margin-right: auto;	
+	text-align: center;
+		
+}
+#titel h1
+{
+    font: normal bold 5vw/0em "Playfair Display", serif;
+    padding: 0;
+}
+#titel h2
+{
+    font: italic 5vw/6em "Playfair Display", serif;
+    padding: 0;
+}
+#titel h6  
+{
+    font: normal 1vw/0.575em "Yantramanav", sans-serif;
+    padding: 0;
+}
+#titel h4
+{
+    font: normal 3vw/1em "Yantramanav", sans-serif;
+    padding: 0;
+}
+
+.hoofdstuk{
+	width: 100%;
+	margin-right:auto;
+    margin-left: auto;	
+	font-family: 'Yantramanav', sans-serif;
+	font-size: 16px;
+	letter-spacing:1px;
+	line-height: 18pt;
+	page-break-after: always;
+
+}
+
+.hoofdstuktitel{
+	width: 60%;
+	margin-left: 5%;
+	margin-top: 0px;
+	font-size: 20px;
+	line-height: 20pt;
+	font-weight: normal;
+	page-break-after: always;
+}
+
+
+}
+
+#footnote{
+	width: 100%;
+	margin-right:auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+	font-family: 'Yantramanav', sans-serif;	
+	font-size: 11px;
+	letter-spacing:0px;
+	line-height: 12pt;
+	
+}
+
+.image{
+	width: 16%;
+	margin-top: 0px;
+    margin-left: 100px;	
+    margin-bottom: 0px;	
+	font-family: 'Yantramanav', sans-serif;	
+	font-size: 16px;
+	letter-spacing:1px;
+	line-height: 18pt;	
+	float: left;
+	page-break-after: always;
+	
+}
+
+.quote {
+	margin-left: 10%;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-size: 11px;
+	letter-spacing:0px;
+	line-height: 12pt;
+	
+}
+
+.footertitelbottom{
+	display: none;
+}
+
+.footertiteltop{
+		display: none;
+
+}
+
+
+}
