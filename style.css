@@ -123,12 +123,13 @@ main {
   margin: 50px auto;
   width: 70vh;
   height: 70vh;
+  padding top: 50;
   background: url("img/cover–robin-thicke.png") center no-repeat;
   background-size: cover;
 }
-#cover_title {
+.cover_title {
     position: absolute;
-    z-index: 2;
+    z-index: 1;
     width: 100vw;
     font: normal normal 48pt/1em 'Times', serif;
     text-align: center;
