@@ -104,6 +104,7 @@ blockquote
   padding: 5vh 1em;
 }
 .hoofdstuk .teaser {
+	  font-size: 1em;
   left: 24vw;
   width: 30vw;
   padding: 5vh 2em 5vh 1em;
@@ -116,18 +117,18 @@ blockquote
 }
 .hoofdstuk .broodtekst {
   left: 45vw;
-  width: 155vw;
+  width: 200vw;
 }
 .hoofdstuk .broodtekst .content {
 	left: 45vw;
   float: left;
-  width: auto;
+  width: 200px;
   padding: 5vh 16vw 5vh 0;
 }
 .hoofdstuk .broodtekst .footnote {
   float: right;
   position: relative;
-  width: auto;
+  width: 200px;
   padding: 1em 1em 0 2em;
   margin: 1.2em 0;
   margin-right: -16vw;
