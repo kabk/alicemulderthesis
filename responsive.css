@@ -1,5 +1,65 @@
-@media screen and (max-width: 601px) and (min-width: 992px) 
+@media screen and (max-width: 640px) 
 {
+  .print_toggle 
+  {
+    display: none;
+  }
 
+  /****
+    hoofdstukken
+  ****/
+
+  .hoofdstuk > div
+  {
+    min-height: 0;
+  }
+  .hoofdstuk h1
+  {
+    font-size: 2em;
+  }
+  .hoofdstuk a[rel="footnote"]
+  {
+    display: none;
+  }
+  .hoofdstuk .rug 
+  {
+    display:none;
+  }
+  .hoofdstuk .teaser
+  {
+    width: 100%;
+    padding: 25px;
+  }
+  .hoofdstuk .broodtekst
+  {
+    width: 100%;
+  }
+   .hoofdstuk .broodtekst .content
+  {
+    padding: 25px;
+    width: 100%;
+  }
+  .hoofdstuk .broodtekst .footnote 
+  {
+    display:none;
+  }
+  /****
+    reclame blok
+  ****/
+
+  .reclameblok img
+  {
+    width: 80vw;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+
+
+  .volkskrant
+  {
+    width: 80vw;
+   margin: 0 auto;
+    padding: 0;
+  }
 }
-
