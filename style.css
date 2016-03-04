@@ -164,6 +164,7 @@ main {
   font-size: 0.7em;
   text-align: center;
   cursor: pointer;
+  z-index: 999;
 }
 
 .menu_toggle {
@@ -183,6 +184,7 @@ nav {
   padding: 5vh 1em;
   background-color: black;
   color: #fff;
+  z-index: 999;
 }
 nav li {
   width: 100%;
