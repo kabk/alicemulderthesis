@@ -17,7 +17,7 @@ $(function() {
     });
 
     $('#start_reading').on('click', function(event) {
-        // $('body, html').css('overflow', 'auto');
+        $('body, html').css('overflow', 'auto');
         $('body').scrollTo($(this).attr('data-target'), 'slow');
     });
 
@@ -31,7 +31,7 @@ $(function() {
     });
 
     $('.menu_toggle').on('click', function(event) {
-       //  $('body, html').css('overflow', 'scroll');
+        $('body, html').css('overflow', 'scroll');
 
         $(this).toggleClass('open');
 
