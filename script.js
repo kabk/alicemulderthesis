@@ -54,7 +54,8 @@ $(function() {
     }
 
     $('.print_toggle').on('click', function() {
-        window.open(''); // link to pdf
+        // window.open(''); // link to pdf
+        window.print();
     });
 });
 
