@@ -46,7 +46,6 @@ hr{height:0;border:0;border-top:1px solid #eee;margin:20px 0}
 	display: none;
 	}
 
-
 .button {
   position: fixed;
   top: 25px;
@@ -67,7 +66,7 @@ hr{height:0;border:0;border-top:1px solid #eee;margin:20px 0}
 
 .print_toggle {
   right: 25px;
- 	display: none;
+ display: none;
 }
 
 blockquote
@@ -86,7 +85,6 @@ blockquote
         font-size: 12pt;
         column-width: 100%;
     }
-
 
 .hoofdstuk {
   width: inherit;

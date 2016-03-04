@@ -18,9 +18,7 @@ time, mark, audio, video {
   font-size: 100%;
   vertical-align: baseline;
 }
-body {
-    text-rendering: optimizeLegibility;
-}
+
 html {
   line-height: 1;
 }
@@ -59,18 +57,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 html, body {
   box-sizing: border-box;
   font-family: "Yantramanav", sans-serif;
-  line-height: 1.2em;
 }
 
 *, *::before, *:after {
   box-sizing: inherit;
 }
 
-h1, h2, h3, h4, h5
+h1, h2, h3, h4, h5, h6
 {
     font: normal normal 1em/1em "Playfair Display", serif;
     margin-bottom: 1em;
-    line-height: 1.2em;
 }
 
 h6 
@@ -177,7 +173,7 @@ main {
 
 nav {
   position: fixed;
-  left: -200px;
+  left: -300px;
   top: 0px;
   width: 300px;
   height: 100vh;
@@ -187,17 +183,13 @@ nav {
 }
 nav li {
   width: 100%;
-  font-size: 1em;
+  font-size: 1.5em;
   padding: 5px 0;
   cursor: pointer;
 }
 nav li:hover {
   text-decoration: underline;
   color: #78E8C5;
-}
-.menu {
-  width: 40%;
-  font-size: 1em;
 }
 
 .hoofdstuk {
